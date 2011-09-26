@@ -1,0 +1,32 @@
+---
+abstract: 'Passphrases and Passwords as objects for Dancer'
+author:
+  - 'James Aitken <jaitken@cpan.org>'
+build_requires:
+  Encode: 0
+  Test::More: 0
+  warnings: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300002, CPAN::Meta::Converter version 2.112621'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Dancer-Plugin-Passphrase
+requires:
+  Crypt::Eksblowfish::Bcrypt: 0
+  Dancer::Plugin: 0
+  Data::Entropy: 0
+  Data::Entropy::Algorithms: 0
+  Data::Entropy::RawSource::Local: 0
+  Data::Entropy::Source: 0
+  Digest: 0
+  MIME::Base64: 0
+  perl: 5.010
+  strict: 0
+resources:
+  bugtracker: https://github.com/LoonyPandora/Dancer-Plugin-Passphrase/issues
+  repository: git://github.com/LoonyPandora/Dancer-Plugin-Passphrase.git
+version: 0.1.0

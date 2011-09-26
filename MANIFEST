@@ -1,0 +1,14 @@
+CHANGES
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+lib/Dancer/Plugin/Passphrase.pm
+t/001_basics.t
+t/002_default_settings.t
+t/003_all_algorithm_matching.t
+t/004_random_passphrase.t
+t/005_return_object.t
+t/006_no_salt.t
+t/007_unicode_matching.t
