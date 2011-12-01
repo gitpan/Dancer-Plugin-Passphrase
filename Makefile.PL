@@ -32,9 +32,10 @@ my %WriteMakefileArgs = (
     "Data::Entropy::Source" => 0,
     "Digest" => 0,
     "MIME::Base64" => 0,
+    "overload" => 0,
     "strict" => 0
   },
-  "VERSION" => "0.1.1",
+  "VERSION" => "1.0.0",
   "test" => {
     "TESTS" => "t/*.t"
   }
