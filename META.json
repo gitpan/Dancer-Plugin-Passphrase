@@ -1,0 +1,51 @@
+{
+   "abstract" : "Passphrases and Passwords as objects for Dancer",
+   "author" : [
+      "James Aitken <jaitken@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300029, CPAN::Meta::Converter version 2.120921",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Dancer-Plugin-Passphrase",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.30"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Dancer::Plugin" : "0",
+            "Data::Entropy::Algorithms" : "0.005",
+            "Digest::Bcrypt" : "0",
+            "Digest::SHA" : "5.008001",
+            "perl" : "5.010001"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Dancer" : "0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/LoonyPandora/Dancer-Plugin-Passphrase/issues"
+      },
+      "homepage" : "https://github.com/LoonyPandora/Dancer-Plugin-Passphrase",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/LoonyPandora/Dancer-Plugin-Passphrase.git",
+         "web" : "https://github.com/LoonyPandora/Dancer-Plugin-Passphrase"
+      }
+   },
+   "version" : "2.0.0"
+}
+

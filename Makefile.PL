@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-use 5.010;
+use 5.010001;
 
 use ExtUtils::MakeMaker 6.30;
 
@@ -12,9 +12,7 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "Passphrases and Passwords as objects for Dancer",
   "AUTHOR" => "James Aitken <jaitken\@cpan.org>",
   "BUILD_REQUIRES" => {
-    "Encode" => 0,
-    "Test::More" => 0,
-    "warnings" => 0
+    "Dancer" => 0
   },
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30"
@@ -24,18 +22,12 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Dancer::Plugin::Passphrase",
   "PREREQ_PM" => {
-    "Crypt::Eksblowfish::Bcrypt" => 0,
     "Dancer::Plugin" => 0,
-    "Data::Entropy" => 0,
-    "Data::Entropy::Algorithms" => 0,
-    "Data::Entropy::RawSource::Local" => 0,
-    "Data::Entropy::Source" => 0,
-    "Digest" => 0,
-    "MIME::Base64" => 0,
-    "overload" => 0,
-    "strict" => 0
+    "Data::Entropy::Algorithms" => "0.005",
+    "Digest::Bcrypt" => 0,
+    "Digest::SHA" => "5.008001"
   },
-  "VERSION" => "1.0.0",
+  "VERSION" => "2.0.0",
   "test" => {
     "TESTS" => "t/*.t"
   }
