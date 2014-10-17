@@ -43,6 +43,12 @@ hashing function provided by L<Digest>
         return passphrase->generate_random;
     };
 
+=head1 NOTE
+
+This package does no checking about how secure the password is,
+minimum length or anything, including a length of 0 being valid.
+You can add extra checks in your "MyWebService".
+
 =cut
 
 use strict;
@@ -55,7 +61,7 @@ use Digest;
 use MIME::Base64 qw(decode_base64 encode_base64);
 use Scalar::Util qw(blessed);
 
-our $VERSION = '2.0.1';
+our $VERSION = '2.0.2';
 
 # Auto stringifies and returns the RFC 2307 representation
 # of the object unless we are calling a method on it
@@ -738,6 +744,13 @@ L<Dancer>, L<Digest>, L<Crypt::Eksblowfish::Bcrypt>, L<Dancer::Plugin::Bcrypt>
 
 James Aitken <jaitken@cpan.org>
 
+=head1 ADOPTED
+
+Henk van Oers <hvoers@cpan.org>
+
+=head1 TODO
+
+Make a Dancer2 version.
 
 =head1 COPYRIGHT AND LICENSE
 
