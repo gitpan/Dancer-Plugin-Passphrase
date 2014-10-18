@@ -16,6 +16,7 @@ WriteMakefile(
         'Dancer'     => 1.3118,
         'Digest::Bcrypt' => 0,
         'Digest::SHA' => 5.74,
+        'Data::Entropy' => 0.007,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'Dancer-Plugin-Passphrase-*' },

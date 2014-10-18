@@ -33,6 +33,7 @@
       "runtime" : {
          "requires" : {
             "Dancer" : "1.3118",
+            "Data::Entropy" : "0.007",
             "Digest::Bcrypt" : "0",
             "Digest::SHA" : "5.74",
             "Test::More" : "0"
@@ -49,5 +50,5 @@
          "url" : "https://github.com/hvoers/Dancer-Plugin-Passphrase"
       }
    },
-   "version" : "v2.0.2"
+   "version" : "v2.0.3"
 }
